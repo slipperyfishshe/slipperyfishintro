@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>slipperyfish</title>
+
+	<style>
+		h1 {text-align:center;
+		    font-size:50px;}
+		h2 {text-align:center;}
+
+		button {display:block;
+		        margin:auto;}
+		img {width:100%;}
+		
+		#chineseText {text-align: center;}
+		
+		</style>
+	</head>
+
+
+<body>
+	
+	<h1>Introduce Myself</h1>
+	<h2>I am your mom.</h2>
+	<h2 id="chineseText"></h2>
+
+	<button type="button" onclick="change()">click me</button>
+
+	<img src="https://cdn.phototourl.com/free/2026-05-27-4ae7633a-c4f8-4950-895e-ac6bfeea9ba3.jpg">
+	
+	<script>
+		function change() {
+		var textElement = document.getElementById("chineseText");
+		if (textElement.innerText === "")
+		   {textElement.innerText = "我是你媽";}
+		else {textElement.innerText = "";}
+		}
+		</script>
+
+	</body>
+
+</html>
